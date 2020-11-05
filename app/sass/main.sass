@@ -45,6 +45,7 @@ section
     background-repeat: no-repeat
     background-position: center
     background-size: cover
+    width: 100%
     // visibility: hidden
 
 .fluid-container
@@ -118,14 +119,130 @@ button[type='submit']
 
 
 
-//start here
 
-main
-    background: #101010
-    width: 100%
-    height: 100vh
+.header
     display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    
+    position: absolute
+    top: 0
+    width: 100%
+    padding-top: gem(50)
+    &-main
+        display: flex
+        justify-content: space-between
+        .logo
+            display: flex
+            width: gem(87)
+            height: gem(65)
+            img
+                width: 100%
+        .burger
+            display: flex
+            width: gem(45)
+            height: gem(30)
+            padding: gem(5)
+            &-line
+                background: var(--color-white-main)
+                display: block
+                width: gem(35)
+                height: gem(2)
+                background: var(--color-white-main)
+                position: absolute
+                right: gem(5)
+                &:before
+                    content: ''
+                    display: block
+                    width: gem(25)
+                    height: gem(2)
+                    background: var(--color-white-main)
+                    position: absolute
+                    top: gem(9)
+                    right: gem(0)
+                &:after
+                    content: ''
+                    display: block
+                    width: gem(30)
+                    height: gem(2)
+                    background: var(--color-white-main)
+                    position: absolute
+                    top: gem(18)
+                    right: gem(0)
+
+//hero-section
+
+.hero
+    &-section
+        background: url(../img/opening.png) no-repeat
+        .scroll_button
+            display: flex
+            flex-wrap: wrap
+            width: gem(39)
+            margin-left: gem(522)
+            margin-top: gem(113)
+            margin-bottom: gem(100)
+
+    &-main
+        display: flex
+        align-items: flex-start
+        position: relative
+        justify-content: space-between
+        &-tagline
+            display: flex
+            position: absolute
+            p
+                display: flex
+                position: relative
+                transform: rotate(-90deg)
+                height: gem(20)
+                &:before
+                    content: ''
+                    display: block
+                    width: gem(15)
+                    height: gem(2)
+                    background: var(--color-black-main)
+                    position: absolute
+                    left: gem(-23)
+                    bottom: 0
+        h1
+            display: flex
+            flex-direction: column
+            margin-left: gem(277)
+            margin-top: gem(180)
+            width: gem(627)
+            span:nth-child(2)
+                display: flex
+                align-self: flex-end
+                color: var(--color-white-main)
+            span:nth-child(3)
+                margin-left: gem(138)
+        .social
+            display: flex
+            flex-direction: column
+            margin-top: gem(303)
+            a
+                display: flex
+            a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4), a:nth-child(5), a:nth-child(6), a:nth-child(7), a:nth-child(8)
+                margin-bottom: gem(30)
+            a:last-child
+                margin-bottom: 0
+
+
+.scroll_button
+    display: flex
+    flex-wrap: wrap
+    width: gem(39)
+    margin-left: gem(672)
+    position: relative
+    a
+        display: flex
+        position: relative
+        &:after
+            content: ''
+            display: block
+            width: gem(3)
+            height: gem(98)
+            background: black
+            margin-bottom: gem(22)
+            position: absolute
+            right: gem(-20)
+            top: gem(-22)
+
