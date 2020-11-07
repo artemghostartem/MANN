@@ -36,13 +36,47 @@
     </header>
     <main>
         <section class="hero-section">
-            <div class="container">
+            <h1 class="title-h1">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100" viewBox="0 0 200 100">
+                    <style>
+                    svg {
+                        background: transparent;
+                        height: 7.68rem;
+                        width: 100%;
+                        margin-top: -.25rem;
+
+                    }
+                    image {
+                        width: 100%;
+                    }
+                    text {
+                        font-size: 45px;
+                    }
+                    </style>
+                    <pattern id="pattern" patternUnits="userSpaceOnUse" width="200" height="100" >
+                        <image xlink:href="img/opening.png" />
+                    </pattern>
+                    <text class="title-h1" x="15" y="50" stroke="none" stroke-width="11" fill="url(#pattern)">Choose</text>
+                    <text class="title-h1" x="15" y="90" stroke="none" stroke-width="11" fill="url(#pattern)">Your</text>
+                </svg>
+            </h1>
+            <!--             <div class="container">
                 <div class="hero-main">
                     <div class="hero-main-tagline">
                         <p class="small-text black bold">You come to the master, not to the hairdresser</p>
                     </div>
                     <h1 class="title-h1">
-                        <span>Choose</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+                            <defs>
+                                <mask id="LetMask">
+                                    <text font-size="200px" font-family="serif" x="200" y="300" fill="white">
+                                        Choose
+                                    </text>
+                                </mask>
+                            </defs>
+                            <image xlink:href="img/opening.png" width="100%" height="100%" mask="url(#LetMask)" />
+
+                        </svg>
                         <span>your</span>
                         <span>style</span>
                     </h1>
@@ -52,14 +86,35 @@
                         <a href="#"><img src="img/twitter.svg" alt=""></a>
                         <a href="#"><img src="img/instagram.svg" alt=""></a>
                     </div>
+                    <div class="scroll_button">
+                        <a class="small-text black bold" href="">scroll down</a>
+                    </div>
                 </div>
-                <div class="scroll_button">
-                    <a class="small-text black bold" href="">scroll down</a>
+            </div> -->
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="about-main"> 
+                    <div class="about-main-left">
+                        <h2 class="title-h2">About Us</h2>
+                        <p class="desc-1">MANN Barbershop is an exclusively male story. We specialize in men's haircuts and shaving.</p>
+                        <p class="desc-1">Our masters are professionals who constantly improve their skills and use only the best tools and professional cosmetics in their work.</p>
+                        <p class="desc-1">Today MANN Barbershop is two spaces that are located in different parts of Kharkov and have their own individual characteristics and atmosphere, but at the same time, the quality of haircuts remains unchanged.</p>
+                    </div>
+                    <div class="about-main-right">
+                        <div class="about-main-right-player">
+                            <div class="about-main-right-video">
+                                <img src="img/video.png" alt="">
+                            </div>
+                            <p class="desc-1 about-main-right-button">watch video</p>
+                        </div>
+                        <div class="about-main-right-angle"></div>
+                    </div>
+                    <div class="beside_video">
+                        <img src="img/beside.png" alt="">
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="about">
-            
         </section>
     </main>
     <!-- End here -->

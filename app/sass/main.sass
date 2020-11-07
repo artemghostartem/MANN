@@ -126,6 +126,7 @@ button[type='submit']
     top: 0
     width: 100%
     padding-top: gem(50)
+    z-index: 10
     &-main
         display: flex
         justify-content: space-between
@@ -171,20 +172,37 @@ button[type='submit']
 
 .hero
     &-section
-        background: url(../img/opening.png) no-repeat
+        background: #fff
+        background-size: cover
+        height: gem(768)
         .scroll_button
             display: flex
             flex-wrap: wrap
             width: gem(39)
-            margin-left: gem(522)
-            margin-top: gem(113)
-            margin-bottom: gem(100)
+            left: gem(522)
+            bottom: gem(100)
+            position: absolute
+            a
+                display: flex
+                position: relative
+                &:after
+                    content: ''
+                    display: block
+                    width: gem(3)
+                    height: gem(98)
+                    background: var(--color-white-main)
+                    margin-bottom: gem(22)
+                    position: absolute
+                    right: gem(-20)
+                    top: gem(-22)
 
     &-main
         display: flex
-        align-items: flex-start
+        align-items: center
         position: relative
         justify-content: space-between
+        height: gem(768)
+        width: 100%
         &-tagline
             display: flex
             position: absolute
@@ -208,6 +226,7 @@ button[type='submit']
             margin-left: gem(277)
             margin-top: gem(180)
             width: gem(627)
+            margin-bottom: gem(210)
             span:nth-child(2)
                 display: flex
                 align-self: flex-end
@@ -217,32 +236,91 @@ button[type='submit']
         .social
             display: flex
             flex-direction: column
-            margin-top: gem(303)
+            
             a
                 display: flex
+                width: gem(18)
+                img
+                    width: 100%
             a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4), a:nth-child(5), a:nth-child(6), a:nth-child(7), a:nth-child(8)
                 margin-bottom: gem(30)
             a:last-child
                 margin-bottom: 0
 
-
-.scroll_button
-    display: flex
-    flex-wrap: wrap
-    width: gem(39)
-    margin-left: gem(672)
-    position: relative
-    a
+.about
+    &-section
+        background: var(--color-black)
+    &-main
         display: flex
         position: relative
-        &:after
-            content: ''
-            display: block
-            width: gem(3)
-            height: gem(98)
-            background: black
-            margin-bottom: gem(22)
-            position: absolute
-            right: gem(-20)
-            top: gem(-22)
+        padding: gem(220) 0
+        &-left
+            display: flex
+            position: relative
+            flex-direction: column
+            padding-top: gem(15)
+            max-width: gem(500)
+            h2
+                display: flex
+                margin-bottom: gem(45)
+                position: relative
+                margin-left: gem(23)
+                &:before
+                    content: ''
+                    display: block
+                    width: gem(15)
+                    height: gem(2)
+                    background: var(--color-white-main)
+                    position: absolute
+                    left: gem(-23)
+                    bottom: 0
+                &:after
+                    content: '01'
+                    display: block
+                    font-family: var(--main-font)
+                    font-size: var(--font-size-desc1)
+                    font-weight: var(--font-weight-3)
+                    position: absolute
+                    left: gem(176)
+                    top: gem(-18)
+            p:nth-child(3)
+                margin: gem(20) 0
+        &-right
+            display: flex
+            margin-left: gem(80)
+            flex-wrap: wrap
+            &-player
+                display: flex
+                flex-direction: column
+            &-video
+                display: flex
+                height: auto
+                width: gem(440)
+            &-button
+                display: flex
+                justify-content: center
+                position: relative
+                margin-top: gem(44)
+                &:before
+                    content: ''
+                    display: block
+                    width: gem(15)
+                    height: gem(2)
+                    background: var(--color-white-main)
+                    position: absolute
+                    left: gem(143)
+                    bottom: 0
 
+            &-angle
+                display: flex
+                margin-left: gem(70)
+                margin-top: gem(48)
+                width: gem(50)
+                height: gem(50)
+                border-top: gem(2) var(--color-white) solid
+                border-right: gem(2) var(--color-white) solid
+        .beside_video
+            display: flex
+            position: absolute
+            right: gem(22)
+            top: gem(292)
