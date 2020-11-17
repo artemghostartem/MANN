@@ -143,6 +143,20 @@ button[type='submit']
             width: gem(45)
             height: gem(30)
             padding: gem(5)
+            transition: all 0.3s ease
+            &.active-menu
+                margin-top: gem(10)
+                .burger-line
+                    &:before
+                        opacity: 0
+                        transform: rotate(90deg)
+                        top: 0
+                        // width: gem(35)
+                    &:after
+                        width: gem(35)
+                        transform: rotate(90deg)
+                        top: 0
+                    transform: rotate(45deg)
             &-line
                 background: var(--color-white-main)
                 display: block
@@ -151,6 +165,7 @@ button[type='submit']
                 background: var(--color-white-main)
                 position: absolute
                 right: gem(5)
+                transition: all 0.3s ease
                 &:before
                     content: ''
                     display: block
@@ -159,7 +174,9 @@ button[type='submit']
                     background: var(--color-white-main)
                     position: absolute
                     top: gem(9)
+                    opacity: 1
                     right: gem(0)
+                    transition: all 0.3s ease
                 &:after
                     content: ''
                     display: block
@@ -169,6 +186,7 @@ button[type='submit']
                     position: absolute
                     top: gem(18)
                     right: gem(0)
+                    transition: all 0.3s ease
 
 //hero-section
 
@@ -536,6 +554,10 @@ button[type='submit']
             height: gem(285)
             img
                 width: 100%
+                filter: grayscale(100%)
+                transition: all 0.3s ease
+                &:hover
+                    filter: grayscale(0)
             h2
                 display: flex
                 position: relative
