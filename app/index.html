@@ -28,9 +28,9 @@
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <div class="burger">
+                <a class="burger popup-with-move-anim" href="#menu">
                     <span class="burger-line"></span>
-                </div>
+                </a>
             </div>
         </div>
     </header>
@@ -39,7 +39,7 @@
             <h1 class="title-h1">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100" viewBox="0 0 200 100">
                     <style>
-                    svg {
+                        svg {
                         background: transparent;
                         height: 7.68rem;
                         width: 100%;
@@ -50,51 +50,41 @@
                         width: 100%;
                     }
                     text {
-                        font-size: 45px;
+                        font-size: 14px;
                     }
                     </style>
-                    <pattern id="pattern" patternUnits="userSpaceOnUse" width="200" height="100" >
+                    <pattern id="pattern" patternUnits="userSpaceOnUse" width="200" height="100">
                         <image xlink:href="img/opening.png" />
                     </pattern>
-                    <text class="title-h1" x="15" y="50" stroke="none" stroke-width="11" fill="url(#pattern)">Choose</text>
-                    <text class="title-h1" x="15" y="90" stroke="none" stroke-width="11" fill="url(#pattern)">Your</text>
+                    <text class="title-h1 desc_title" x="45" y="35" stroke="none" stroke-width="11" fill="url(#pattern)">Choose</text>
+                    <text class="title-h1 desc_title" x="100" y="55" stroke="none" stroke-width="11" fill="#ECECEC">your</text>
+                    <text class="title-h1 desc_title" x="64" y="78" stroke="none" stroke-width="11" fill="url(#pattern)">style</text>
+                    <text class="title-h1 mobile_title" x="8" y="5" stroke="none" stroke-width="11" fill="#080808">Choose</text>
+                    <text class="title-h1 mobile_title" x="8" y="55" stroke="none" stroke-width="11" fill="#080808">your</text>
+                    <text class="title-h1 mobile_title" x="8" y="110" stroke="none" stroke-width="11" fill="#080808">style</text>
                 </svg>
             </h1>
-            <!--             <div class="container">
+            <div class="hero-section-bgr"></div>
+            <div class="container">
                 <div class="hero-main">
                     <div class="hero-main-tagline">
                         <p class="small-text black bold">You come to the master, not to the hairdresser</p>
                     </div>
-                    <h1 class="title-h1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
-                            <defs>
-                                <mask id="LetMask">
-                                    <text font-size="200px" font-family="serif" x="200" y="300" fill="white">
-                                        Choose
-                                    </text>
-                                </mask>
-                            </defs>
-                            <image xlink:href="img/opening.png" width="100%" height="100%" mask="url(#LetMask)" />
-
-                        </svg>
-                        <span>your</span>
-                        <span>style</span>
-                    </h1>
+                    <div class="scroll_button">
+                        <a class="small-text black bold" href="">scroll down</a>
+                    </div>
                     <div class="social">
                         <a href="#"><img src="img/telegram.svg" alt=""></a>
                         <a href="#"><img src="img/facebook.svg" alt=""></a>
                         <a href="#"><img src="img/twitter.svg" alt=""></a>
                         <a href="#"><img src="img/instagram.svg" alt=""></a>
                     </div>
-                    <div class="scroll_button">
-                        <a class="small-text black bold" href="">scroll down</a>
-                    </div>
                 </div>
-            </div> -->
+            </div>
         </section>
         <section class="about-section">
             <div class="container">
-                <div class="about-main"> 
+                <div class="about-main">
                     <div class="about-main-left">
                         <h2 class="title-h2">About Us</h2>
                         <p class="desc-1">MANN Barbershop is an exclusively male story. We specialize in men's haircuts and shaving.</p>
@@ -116,7 +106,212 @@
                 </div>
             </div>
         </section>
+        <section class="form-section">
+            <h2 class="title-h2 black">Create an style that is worthy of you</h2>
+            <h3 class="title-h3 black">Get 10% discount on your first visit</h3>
+            <form action="">
+                <input class="small-text black" type="text" placeholder="First name">
+                <input class="small-text black" type="text" placeholder="Last name">
+                <button class="small-text black">get a discount</button>
+                <img src="img/tools-bgr.png" alt="">
+            </form>
+        </section>
+        <section class="price-section">
+            <div class="container">
+                <div class="price-main">
+                    <h2 class="title-h2">Services and prices</h2>
+                    <div class="price_service">
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Men's haircut</p>
+                            <p class="desc-1">20 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Traditional shave</p>
+                            <p class="desc-1">25 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Haircut machine</p>
+                            <p class="desc-1">20 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Baby haircut</p>
+                            <p class="desc-1">30 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Beard haircut</p>
+                            <p class="desc-1">25 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Father and son</p>
+                            <p class="desc-1">60 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Men's haircut and beard haircut</p>
+                            <p class="desc-1">50 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Haircut update</p>
+                            <p class="desc-1">20 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Haircut and beard haircuts</p>
+                            <p class="desc-1">40 $</p>
+                        </a>
+                        <a href="#" class="price_service-element">
+                            <p class="desc-1">Stacking</p>
+                            <p class="desc-1">20 $</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="container">
+                <div class="team-main">
+                    <h2 class="title-h2">Our team</h2>
+                    <div class="team_photo">
+                        <div class="team_photo-element">
+                            <img src="img/photo_team-1.png" alt="">
+                            <div class="team_photo-element-name">
+                                <span class="desc-1">barber Alex</span>
+                            </div>
+                        </div>
+                        <div class="team_photo-element">
+                            <img src="img/photo_team-2.png" alt="">
+                            <div class="team_photo-element-name">
+                                <span class="desc-1">barber Max</span>
+                            </div>
+                        </div>
+                        <div class="team_photo-element">
+                            <img src="img/photo_team-3.png" alt="">
+                            <div class="team_photo-element-name">
+                                <span class="desc-1">barber Tom</span>
+                            </div>
+                        </div>
+                        <div class="team_photo-element">
+                            <img src="img/photo_team-4.png" alt="">
+                            <div class="team_photo-element-name">
+                                <span class="desc-1">barber Hz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote-main">
+                    <div class="quote-main-text">
+                        <h2 class="title-h2">Life is to short to have bad hair</h2>
+                        <p class="desc-1">josh lamonaka</p>
+                    </div>
+                    <div class="quote-main-pics">
+                        <img src="img/quote.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-main">
+                    <div class="gallery-main-element">
+                        <h2 class="title-h2">Gallery</h2>
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-1.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-2.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-3.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-4.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-5.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-6.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-7.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-8.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-9.png" alt="">
+                    </div>
+                    <div class="gallery-main-element">
+                        <img src="img/gallery-10.png" alt="">
+                    </div>
+                    <a class="gallery-main-element">
+                        <p class="title-h2">more work</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-section">
+            <div class="container">
+                <h2 class="title-h2">Reviews</h2>
+                <div class="reviews-main">
+                    <div class="reviews-main-pics">
+                        <div class="reviews-main-pics-big">
+                            <img src="img/reviews.png" alt="">
+                            <a class="desc-1" href="#">next</a>
+                        </div>
+                        <div class="reviews-main-pics-small">
+                            <img src="img/reviews-1.png" alt="">
+                            <img src="img/reviews-2.png" alt="">
+                            <img src="img/reviews-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews-main-text">
+                        <h3 class="title-h3">Max Ivanov</h3>
+                        <p class="desc-1">I come here on an ongoing basis. I like the attitude of barbers towards customers - they respond with outgoing conversations, with silent people just do their job. There are no comments on the work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2 class="title-h2 black">Contact Us</h2>
+            <div class="contact-main">
+                <div class="contact-main-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4675.689828803164!2d-118.44503260665522!3d34.038432964749155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb0ad12373ed%3A0x95089cb23886f7e3!2zMTEzMDEgVyBPbHltcGljIEJsdmQgIzEwMCwgTG9zIEFuZ2VsZXMsIENBIDkwMDY0LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1605036096090!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contact-main-text">
+                    <h3 class="title-h3 black">address</h3>
+                    <p class="desc-1 black">11301 West Olympic Boulevard Apt. 100 Los Angeles, CA 90064 USA</p>
+                    <h3 class="title-h3 black">working hours</h3>
+                    <p class="desc-1 black">Mon - Sun 10:00 - 21:00</p>
+                    <h3 class="title-h3 black">phone</h3>
+                    <p class="desc-1 black">+38(050) 11 111 11</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <div id="menu" class="zoom-anim-dialog mfp-hide">
+        <div class="menu_header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <img src="img/logo_white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_main">
+            <a href="#" class="title-h2">Home</a>
+            <a href="#" class="title-h2">About Us</a>
+            <a href="#" class="title-h2">Services and prices</a>
+            <a href="#" class="title-h2">Our team</a>
+            <a href="#" class="title-h2">Gallery</a>
+            <a href="#" class="title-h2">Reviews</a>
+            <a href="#" class="title-h2">Contact Us</a>
+        </div>
+    </div>
     <!-- End here -->
     <script src="js/scripts.min.js"></script>
     <!-- include additional scripts here AFTER app scripts will run -->
