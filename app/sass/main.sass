@@ -1,6 +1,8 @@
 @import './common/vars.sass'
 @import './common/gem.scss'
 @import '../libs/popup/magnific-popup.css'
+@import '../libs/owlgallery/owl.carousel.css'
+@import '../libs/owlgallery/owl.theme.default.css'
 @import './common/popup.sass'
 
 *
@@ -192,7 +194,7 @@ button[type='submit']
 
 .hero
     &-section
-        background: #fff
+        background: var(--color-white-main)
         background-size: cover
         height: gem(768)
         position: relative
@@ -200,10 +202,10 @@ button[type='submit']
             display: flex
             flex-wrap: wrap
             width: gem(39)
-            left: gem(515)
+            left: gem(522)
             bottom: gem(100)
             position: absolute
-            a
+            span
                 display: flex
                 position: relative
                 &:after
@@ -224,6 +226,17 @@ button[type='submit']
             width: 100%
             top: 0
             left: 0
+            svg
+                background: transparent
+                height: gem(768)
+                width: 100%
+                margin-top: gem(-25)
+                image
+                    width: 100%
+                text
+                    font-size: gem(14)
+                text.title-h1.desc_title:nth-child(2)
+                    margin-right: gem(10)
         .container
             z-index: 10
         &-bgr
@@ -337,6 +350,9 @@ button[type='submit']
                 display: flex
                 height: auto
                 width: gem(440)
+                video
+                    width: 100%
+                    height: auto
             &-button
                 display: flex
                 justify-content: center
@@ -400,6 +416,8 @@ button[type='submit']
             font-weight: var(--font-weight-4)
             line-height: var(--line-height-small-text)
             position: relative
+            cursor: pointer
+            z-index: 15
             &:before
                 content: ''
                 display: block
@@ -448,6 +466,7 @@ button[type='submit']
             display: flex
             flex-wrap: wrap
             margin-top: gem(130)
+            justify-content: space-between
             &-element
                 display: flex
                 width: gem(460)
@@ -455,10 +474,28 @@ button[type='submit']
                 margin-bottom: gem(25)
                 border-bottom: gem(2) solid var(--color-price)
                 justify-content: space-between
-                &:nth-child(odd)
-                    margin-right: gem(219)
-                p
+                span
                     direction: flex
+                .price_button
+                    display: flex
+                    position: relative
+                    width: gem(80)
+                    background: none
+                    border: none
+                    display: none
+                    &:before
+                        content: ''
+                        display: block
+                        width: gem(62)
+                        height: gem(1)
+                        background: var(--color-white-main)
+                        position: absolute
+                        right: gem(-67)
+                        bottom: gem(12)
+            &-element:hover
+                .price_button
+                    display: flex
+
 .team
     &-section
         padding: gem(235) 0 gem(110) 0
@@ -494,7 +531,8 @@ button[type='submit']
             &-element
                 display: flex
                 position: relative
-                &-name
+                width: gem(285)
+                .team_name
                     display: flex
                     position: absolute
                     bottom: 0
@@ -513,6 +551,35 @@ button[type='submit']
                             position: absolute
                             left: gem(-23)
                             bottom: 0
+                .team_button
+                    display: none
+                    position: absolute
+                    bottom: 0
+                    right: 0
+                    background: var(--color-black)
+                    padding: gem(10) gem(28)
+                    width: gem(158)
+                    span
+                        display: flex
+                        position: relative
+                        &:before
+                            content: ''
+                            display: block
+                            width: gem(62)
+                            height: gem(1)
+                            background: var(--color-white-main)
+                            position: absolute
+                            right: gem(-67)
+                            bottom: gem(12)
+                img
+                    width: 100%
+                    height: auto
+            &-element:hover
+                .team_button
+                    display: flex
+                .team_name
+                    display: none
+
 .quote
     &-section
         padding: gem(110) 0 gem(110) 0
@@ -579,6 +646,9 @@ button[type='submit']
                     position: absolute
                     left: gem(143)
                     top: gem(-18)
+            a
+                width: 100%
+                height: auto
             p
                 display: flex
                 position: relative
@@ -622,16 +692,24 @@ button[type='submit']
     &-main
         display: flex
         justify-content: space-between
-        &-pics
+        position: relative
+        &-big
             display: flex
             position: relative
-            &-big
+            justify-content: space-between
+            z-index: 10
+            &-pics
+                display: flex
+                width: gem(454)
+            &-text
                 display: flex
                 flex-direction: column
-                a
-                    margin-top: gem(15)
-                    margin-left: gem(352)
+                margin-top: gem(163)
+                max-width: gem(400)
+                h3
+                    margin-bottom: gem(34)
                     position: relative
+                    margin-left: gem(23)
                     &:before
                         content: ''
                         display: block
@@ -641,33 +719,37 @@ button[type='submit']
                         position: absolute
                         left: gem(-23)
                         bottom: 0
-            &-small
-                display: flex
-                flex-direction: column
-                position: absolute
-                top: gem(60)
-                right: gem(-211)
-                img:nth-child(2)
-                    display: flex
-                    margin: gem(20) 0
-        &-text
+        &-small
             display: flex
-            flex-direction: column
-            margin-top: gem(163)
-            max-width: gem(400)
-            h3
-                margin-bottom: gem(34)
-                position: relative
-                margin-left: gem(23)
-                &:before
-                    content: ''
-                    display: block
-                    width: gem(15)
-                    height: gem(2)
-                    background: var(--color-white-main)
-                    position: absolute
-                    left: gem(-23)
-                    bottom: 0
+            position: absolute
+            bottom: gem(120)
+            left: gem(250)
+            width: gem(600)
+            height: gem(250)
+            transform: rotate(90deg)
+            z-index: 15
+            &-slide
+                display: flex
+                width: gem(180)
+                height: auto
+                img
+                    width: gem(250)
+                    height: gem(180)
+                    transform: rotate(-90deg)
+.carousel-next
+    position: absolute
+    bottom: gem(-40)
+    left: gem(362)
+    &:before
+        content: ''
+        display: block
+        width: gem(15)
+        height: gem(2)
+        background: var(--color-white-main)
+        position: absolute
+        left: gem(-23)
+        bottom: 0
+        
 .contact
     &-section
         padding: gem(115) 0 0 0

@@ -25,9 +25,9 @@
     <header class="header">
         <div class="container">
             <div class="header-main">
-                <div class="logo">
+                <a href="#" class="logo">
                     <img src="img/logo.svg" alt="">
-                </div>
+                </a>
                 <a class="burger popup-with-move-anim" href="#menu">
                     <span class="burger-line"></span>
                 </a>
@@ -38,26 +38,11 @@
         <section class="hero-section">
             <h1 class="title-h1">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100" viewBox="0 0 200 100">
-                    <style>
-                        svg {
-                        background: transparent;
-                        height: 7.68rem;
-                        width: 100%;
-                        margin-top: -.25rem;
-
-                    }
-                    image {
-                        width: 100%;
-                    }
-                    text {
-                        font-size: 14px;
-                    }
-                    </style>
                     <pattern id="pattern" patternUnits="userSpaceOnUse" width="200" height="100">
                         <image xlink:href="img/opening.png" />
                     </pattern>
                     <text class="title-h1 desc_title" x="45" y="35" stroke="none" stroke-width="11" fill="url(#pattern)">Choose</text>
-                    <text class="title-h1 desc_title" x="100" y="55" stroke="none" stroke-width="11" fill="#ECECEC">your</text>
+                    <text class="title-h1 desc_title" x="99.4" y="55" stroke="none" stroke-width="11" fill="#ECECEC">your</text>
                     <text class="title-h1 desc_title" x="64" y="78" stroke="none" stroke-width="11" fill="url(#pattern)">style</text>
                     <text class="title-h1 mobile_title" x="8" y="5" stroke="none" stroke-width="11" fill="#080808">Choose</text>
                     <text class="title-h1 mobile_title" x="8" y="55" stroke="none" stroke-width="11" fill="#080808">your</text>
@@ -70,9 +55,9 @@
                     <div class="hero-main-tagline">
                         <p class="small-text black bold">You come to the master, not to the hairdresser</p>
                     </div>
-                    <div class="scroll_button">
-                        <a class="small-text black bold" href="">scroll down</a>
-                    </div>
+                    <a href="#aboutSection" class="scroll_button">
+                        <span class="small-text black bold">scroll down</span>
+                    </a>
                     <div class="social">
                         <a href="#"><img src="img/telegram.svg" alt=""></a>
                         <a href="#"><img src="img/facebook.svg" alt=""></a>
@@ -82,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-section">
+        <section id="aboutSection" class="about-section">
             <div class="container">
                 <div class="about-main">
                     <div class="about-main-left">
@@ -94,9 +79,11 @@
                     <div class="about-main-right">
                         <div class="about-main-right-player">
                             <div class="about-main-right-video">
-                                <img src="img/video.png" alt="">
+                                <a class="popup-with-move-anim" href="#video">
+                                    <video src="video/video.mp4"></video>
+                                </a>
                             </div>
-                            <p class="desc-1 about-main-right-button">watch video</p>
+                            <a class="desc-1 about-main-right-button popup-with-move-anim" href="#video">watch video</a>
                         </div>
                         <div class="about-main-right-angle"></div>
                     </div>
@@ -108,7 +95,7 @@
         </section>
         <section class="form-section">
             <h2 class="title-h2 black">Create an style that is worthy of you</h2>
-            <h3 class="title-h3 black">Get 10% discount on your first visit</h3>
+            <h3 class="title-h3 black">Get <span class="title-h3 black bold">10% discount</span> on your first visit</h3>
             <form action="" method="post">
                 <input class="small-text black" type="text" placeholder="Your name" name="name">
                 <input class="small-text black" type="text" placeholder="Phone number" name="phone">
@@ -121,46 +108,56 @@
                 <div class="price-main">
                     <h2 class="title-h2">Services and prices</h2>
                     <div class="price_service">
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Men's haircut</p>
-                            <p class="desc-1">20 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Traditional shave</p>
-                            <p class="desc-1">25 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Haircut machine</p>
-                            <p class="desc-1">20 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Baby haircut</p>
-                            <p class="desc-1">30 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Beard haircut</p>
-                            <p class="desc-1">25 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Father and son</p>
-                            <p class="desc-1">60 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Men's haircut and beard haircut</p>
-                            <p class="desc-1">50 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Haircut update</p>
-                            <p class="desc-1">20 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Haircut and beard haircuts</p>
-                            <p class="desc-1">40 $</p>
-                        </a>
-                        <a href="#" class="price_service-element">
-                            <p class="desc-1">Stacking</p>
-                            <p class="desc-1">20 $</p>
-                        </a>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Men's haircut</span>
+                            <span class="desc-1 bold">20 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Traditional shave</span>
+                            <span class="desc-1 bold">25 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Haircut machine</span>
+                            <span class="desc-1 bold">20 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Baby haircut</span>
+                            <span class="desc-1 bold">30 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Beard haircut</span>
+                            <span class="desc-1 bold">25 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Father and son</span>
+                            <span class="desc-1 bold">60 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Men's haircut and beard haircut</span>
+                            <span class="desc-1 bold">50 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Haircut update</span>
+                            <span class="desc-1 bold">20 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Haircut and beard haircuts</span>
+                            <span class="desc-1 bold">40 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
+                        <div class="price_service-element">
+                            <span class="desc-1 bold">Stacking</span>
+                            <span class="desc-1 bold">20 $</span>
+                            <a href="#" class="desc-1 bold price_button">sign up</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,27 +169,39 @@
                     <div class="team_photo">
                         <div class="team_photo-element">
                             <img src="img/photo_team-1.png" alt="">
-                            <div class="team_photo-element-name">
+                            <div class="team_name">
                                 <span class="desc-1">barber Alex</span>
                             </div>
+                            <a class="team_button" href="#">
+                                <span class="desc-1">sign up</span>
+                            </a>
                         </div>
                         <div class="team_photo-element">
                             <img src="img/photo_team-2.png" alt="">
-                            <div class="team_photo-element-name">
+                            <div class="team_name">
                                 <span class="desc-1">barber Max</span>
                             </div>
+                            <a class="team_button" href="#">
+                                <span class="desc-1">sign up</span>
+                            </a>
                         </div>
                         <div class="team_photo-element">
                             <img src="img/photo_team-3.png" alt="">
-                            <div class="team_photo-element-name">
+                            <div class="team_name">
                                 <span class="desc-1">barber Tom</span>
                             </div>
+                            <a class="team_button" href="#">
+                                <span class="desc-1">sign up</span>
+                            </a>
                         </div>
                         <div class="team_photo-element">
                             <img src="img/photo_team-4.png" alt="">
-                            <div class="team_photo-element-name">
+                            <div class="team_name">
                                 <span class="desc-1">barber Hz</span>
                             </div>
+                            <a class="team_button" href="#">
+                                <span class="desc-1">sign up</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -213,43 +222,45 @@
         </section>
         <section class="gallery-section">
             <div class="container">
-                <div class="gallery-main">
+                <div class="gallery-main zoom-gallery">
                     <div class="gallery-main-element">
                         <h2 class="title-h2">Gallery</h2>
                     </div>
-                    <div class="gallery-main-element">
+                    <a class="gallery-main-element" href="img/gallery-1.png">
                         <img src="img/gallery-1.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-2.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-3.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-4.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-5.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-6.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-7.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-8.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-9.png" alt="">
-                    </div>
-                    <div class="gallery-main-element">
-                        <img src="img/gallery-10.png" alt="">
-                    </div>
-                    <a class="gallery-main-element">
-                        <p class="title-h2">more work</p>
                     </a>
+                    <a class="gallery-main-element" href="img/gallery-2.png">
+                        <img src="img/gallery-2.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-3.png">
+                        <img src="img/gallery-3.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-4.png">
+                        <img src="img/gallery-4.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-5.png">
+                        <img src="img/gallery-5.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-6.png">
+                        <img src="img/gallery-6.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-7.png">
+                        <img src="img/gallery-7.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-8.png">
+                        <img src="img/gallery-8.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-9.png">
+                        <img src="img/gallery-9.png" alt="">
+                    </a>
+                    <a class="gallery-main-element" href="img/gallery-10.png">
+                        <img src="img/gallery-10.png" alt="">
+                    </a>
+                    <div class="gallery-main-element">
+                        <!-- <a href="#"> -->
+                        <p class="title-h2">more work</p>
+                        <!-- </a> -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -257,21 +268,54 @@
             <div class="container">
                 <h2 class="title-h2">Reviews</h2>
                 <div class="reviews-main">
-                    <div class="reviews-main-pics">
-                        <div class="reviews-main-pics-big">
-                            <img src="img/reviews.png" alt="">
-                            <a class="desc-1" href="#">next</a>
+                    <div class="owl-carousel first-carousel">
+                        <div class="reviews-main-big">
+                            <div class="reviews-main-big-pics">
+                                <img src="img/reviews.png" alt="">
+                            </div>
+                            <div class="reviews-main-big-text">
+                                <h3 class="title-h3">Max Ivanov1</h3>
+                                <p class="desc-1">I come here on an ongoing basis. I like the attitude of barbers towards customers - they respond with outgoing conversations, with silent people just do their job. There are no comments on the work.</p>
+                            </div>
                         </div>
-                        <div class="reviews-main-pics-small">
+                        <div class="reviews-main-big">
+                            <div class="reviews-main-big-pics">
+                                <img src="img/reviews.png" alt="">
+                            </div>
+                            <div class="reviews-main-big-text">
+                                <h3 class="title-h3">Max Ivanov2</h3>
+                                <p class="desc-1">I come here on an ongoing basis. I like the attitude of barbers towards customers - they respond with outgoing conversations, with silent people just do their job. There are no comments on the work.</p>
+                            </div>
+                        </div>
+                        <div class="reviews-main-big">
+                            <div class="reviews-main-big-pics">
+                                <img src="img/reviews.png" alt="">
+                            </div>
+                            <div class="reviews-main-big-text">
+                                <h3 class="title-h3">Max Ivanov3</h3>
+                                <p class="desc-1">I come here on an ongoing basis. I like the attitude of barbers towards customers - they respond with outgoing conversations, with silent people just do their job. There are no comments on the work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-main-small">
+                    <div class="owl-carousel  second-carousel">
+                        <div class="reviews-main-small-slide">
                             <img src="img/reviews-1.png" alt="">
+                        </div>
+                        <div class="reviews-main-small-slide">
                             <img src="img/reviews-2.png" alt="">
+                        </div>
+                        <div class="reviews-main-small-slide">
+                            <img src="img/reviews-3.png" alt="">
+                        </div>
+                        <div class="reviews-main-small-slide">
                             <img src="img/reviews-3.png" alt="">
                         </div>
                     </div>
-                    <div class="reviews-main-text">
-                        <h3 class="title-h3">Max Ivanov</h3>
-                        <p class="desc-1">I come here on an ongoing basis. I like the attitude of barbers towards customers - they respond with outgoing conversations, with silent people just do their job. There are no comments on the work.</p>
-                    </div>
+                </div>
+                <div class="carousel-next desc-1">
+                    next
                 </div>
             </div>
         </section>
@@ -302,6 +346,9 @@
             <a href="#" class="title-h2">Reviews</a>
             <a href="#" class="title-h2">Contact Us</a>
         </div>
+    </div>
+    <div id="video" class="zoom-anim-dialog mfp-hide">
+        <video src="video/video.mp4"></video>
     </div>
     <!-- End here -->
     <script src="js/scripts.min.js"></script>

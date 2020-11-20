@@ -2,7 +2,6 @@
 #menu
 	background: var(--color-black)
 	width: 100%
-	position: relative
 	display: flex
 	flex-direction: column
 	position: fixed
@@ -29,6 +28,17 @@
 	display: none
 .mfp-container
 	padding: 0
+
+#video
+	background: var(--color-black)
+	width: gem(1140)
+	position: relative
+	display: flex
+	position: fixed
+	top: gem(100)
+	left: gem(150)
+	video
+		width: 100%
 
 
 
@@ -141,3 +151,51 @@
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg
 	opacity: 0
+
+
+// Zoom-gallery
+
+.image-source-link 
+	color: #98C3D1
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg 
+	opacity: 0
+	-webkit-backface-visibility: hidden
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out 
+	-moz-transition: all 0.3s ease-out 
+	-o-transition: all 0.3s ease-out 
+	transition: all 0.3s ease-out
+
+
+.mfp-with-zoom.mfp-ready .mfp-container 
+		opacity: 1
+
+.mfp-with-zoom.mfp-ready.mfp-bg 
+		opacity: 0.8
+
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg 
+	opacity: 0
+.image-source-link
+	display: none
+.mfp-title
+	display: none
+	// margin-top: gem(20)
+	// font-family: var(--main-font)
+	// font-size: var(--font-size-desc1)
+	// font-weight: var(--font-weight-4)
+	// text-align: center
+
+
+.owl-nav
+	display: none !important
+.owl-dots
+	display: none !important
+// .reviews-main-small-slide
+// 	.owl-item
+// 		width: gem(250) !important
+
