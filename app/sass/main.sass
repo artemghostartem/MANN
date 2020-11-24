@@ -873,6 +873,7 @@ button[type='submit']
         &-section
             align-items: center
             padding: gem(75) gem(15)
+            position: relative
             h2, h3
                 display: flex
                 text-align: center
@@ -881,18 +882,27 @@ button[type='submit']
                 flex-direction: column
                 input:nth-child(2)
                     margin: gem(15) 0
+                img
+                    top: gem(60)
+                    right: gem(-100)
+                    width: gem(500)
+                    height: auto
+                    overflow-x: hidden
+                    max-width: unset
+                    transform: rotate(0deg)
             .title-h2.black
                 font-size: gem(24)
             .title-h3.black
                 font-size: gem(18)
                 line-height: gem(27)
-                // margin-top: gem(25)
-                // margin-bottom: gem(35)
+            .title-h3.black.bold
+                display: inline
             img
                 opacity: 0.1
     .price
         &-section
             padding: gem(165) 0
+            background: url(../img/price-bgr.png) no-repeat gem(200) auto
         &-main
             .title-h2
                 text-align: center
