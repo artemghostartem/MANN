@@ -79,7 +79,7 @@ $(document).ready(function() {
 		items:1,
 		loop: true,
 		margin:0,
-		nav:true,
+		nav:false,
         mouseDrag: false,
         touchDrag: false,
 
@@ -89,7 +89,7 @@ $(document).ready(function() {
         items:3,
         loop: true,
         margin:0,
-        nav:true,
+        nav:false,
         mouseDrag: false,
         touchDrag: false,
 
